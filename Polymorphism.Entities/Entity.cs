@@ -9,5 +9,14 @@ namespace Polymorphism.Entities
         protected int id;
 
         public int Id { get; }
+
+        public Entity(int id)
+        {
+            if (id <= 0)
+            {
+                throw new ArgumentOutOfRangeException("Id skal være over 0");
+            }
+            this.id = id;
+        }
     }
 }
