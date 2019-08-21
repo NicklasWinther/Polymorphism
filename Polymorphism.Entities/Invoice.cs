@@ -24,7 +24,12 @@ namespace Polymorphism.Entities
 
         public decimal GetPaymentAmount()
         {
-            throw new NotImplementedException();
+            decimal payment = 0;
+            foreach (Product product in Products)
+            {
+                payment += product.Price * product.Quantity;
+            }
+            return payment;
         }
     }
 }

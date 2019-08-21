@@ -21,7 +21,7 @@ namespace Polymorphism.Entities
 
         public override decimal Earnings()
         {
-            throw new NotImplementedException();
+            return base.Earnings() + WeeklySales * (decimal)CommisionRate;
         }
     }
 }

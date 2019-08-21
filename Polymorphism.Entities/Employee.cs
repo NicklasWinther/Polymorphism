@@ -19,7 +19,7 @@ namespace Polymorphism.Entities
 
         public decimal GetPaymentAmount()
         {
-            throw new NotImplementedException();
+            return Earnings() * 0.85m;
         }
     }
 }
