@@ -2,7 +2,8 @@
 
 namespace Polymorphism.Entities
 {
-    public class Class1
+    public interface IPersistable
     {
+        int Id { get; }
     }
 }
